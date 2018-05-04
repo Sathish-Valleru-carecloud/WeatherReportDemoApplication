@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/wind_speed_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/weather_info_padding_top"
+        android:paddingBottom="@dimen/weather_info_padding_bottom"
+        android:text="@string/wind_speed"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/weather_info_text_size"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/speed_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/view_text_margin_right"
+        android:padding="@dimen/edit_text_padding"
+        android:layout_marginTop="@dimen/header_text_margin_top"
+        android:textColor="@color/colorValue"
+        android:textSize="@dimen/weather_info_text_size"
+        android:textStyle="normal" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_text_height"
+        android:layout_marginRight="@dimen/view_text_margin_right"
+        android:layout_below="@+id/wind_speed_text"
+        android:background="@color/viewUnderline"
+        android:padding="@dimen/edit_text_padding" />
+
+    <TextView
+        android:id="@+id/cloudiness_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="@dimen/header_text_margin_top"
+        android:paddingTop="@dimen/weather_info_padding_top"
+        android:paddingBottom="@dimen/weather_info_padding_bottom"
+        android:text="@string/cloudiness"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/weather_info_text_size"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/cloudiness_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cloudiness_text"
+        android:layout_alignBottom="@+id/cloudiness_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/view_text_margin_right"
+        android:padding="@dimen/edit_text_padding"
+        android:textStyle="normal"
+        android:textColor="@color/colorValue"
+        android:textSize="@dimen/weather_info_text_size" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_text_height"
+        android:layout_marginRight="@dimen/view_text_margin_right"
+        android:layout_below="@+id/cloudiness_text"
+        android:background="@color/viewUnderline"
+        android:padding="@dimen/edit_text_padding" />
+
+    <TextView
+        android:id="@+id/pressure_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="@dimen/header_text_margin_top"
+        android:paddingTop="@dimen/weather_info_padding_top"
+        android:paddingBottom="@dimen/weather_info_padding_bottom"
+        android:text="@string/pressure"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/weather_info_text_size"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/pressure_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pressure_text"
+        android:layout_alignBottom="@+id/pressure_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/view_text_margin_right"
+        android:padding="@dimen/edit_text_padding"
+        android:textColor="@color/colorValue"
+        android:textSize="@dimen/weather_info_text_size" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_text_height"
+        android:layout_marginRight="@dimen/view_text_margin_right"
+        android:layout_below="@+id/pressure_text"
+        android:background="@color/viewUnderline"
+        android:padding="@dimen/edit_text_padding" />
+
+    <TextView
+        android:id="@+id/humidity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="@dimen/edit_text_padding"
+        android:paddingTop="@dimen/weather_info_padding_top"
+        android:paddingBottom="@dimen/weather_info_padding_bottom"
+        android:text="@string/humidity"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/weather_info_text_size"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/humidity_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/humidity_text"
+        android:layout_alignBottom="@+id/humidity_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/view_text_margin_right"
+        android:textStyle="normal"
+        android:padding="@dimen/edit_text_padding"
+        android:textColor="@color/colorValue"
+        android:textSize="@dimen/weather_info_text_size" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_text_height"
+        android:layout_below="@+id/humidity_text"
+        android:background="@color/viewUnderline"
+        android:layout_marginRight="@dimen/view_text_margin_right"
+        android:padding="@dimen/edit_text_padding" />
+
+    <TextView
+        android:id="@+id/sunrise_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view4"
+        android:layout_marginTop="@dimen/text_margin_top"
+        android:paddingTop="@dimen/weather_info_padding_top"
+        android:paddingBottom="@dimen/weather_info_padding_bottom"
+        android:text="@string/sunrise"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/weather_info_text_size"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/sunrise_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sunrise_text"
+        android:layout_alignBottom="@+id/sunrise_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/view_text_margin_right"
+        android:padding="@dimen/edit_text_padding"
+        android:textStyle="normal"
+        android:textColor="@color/colorValue"
+        android:textSize="@dimen/weather_info_text_size" />
+
+</RelativeLayout>

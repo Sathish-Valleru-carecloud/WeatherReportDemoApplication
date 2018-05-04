@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/header_weather_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/header_text_size"
+        android:textColor="@color/colorValue"
+        android:padding="@dimen/header_text_padding"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/header_text_margin_top"
+        android:layout_marginLeft="@dimen/header_text_margin_left"
+        android:text="@string/weather"/>
+    <LinearLayout
+        android:id="@+id/weather_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_weather_text"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/header_text_margin_left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cloudy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/condition_text_size"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/black"
+                android:paddingTop="@dimen/header_text_padding"
+                android:paddingBottom="@dimen/header_text_padding"
+                android:layout_marginTop="@dimen/header_text_margin_top"
+                 />
+            <TextView
+                android:id="@+id/weather_info"
+                android:layout_width="@dimen/weadther_desc_width"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/city_text_size"
+                android:textColor="@color/colorValue"
+                android:paddingBottom="@dimen/text_padding_bottom"
+                android:layout_marginTop="@dimen/header_text_margin_top" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/header_text_margin_top" />
+    </LinearLayout>
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_text_height"
+        android:layout_below="@+id/weather_desc"
+        android:background="@color/viewUnderline"
+        android:layout_marginRight="@dimen/view_text_margin_right"
+        android:layout_marginLeft="@dimen/header_text_margin_left"
+        android:padding="5dp" />
+<include
+    android:id="@+id/weather_layout"
+    layout="@layout/weather_information"
+    android:layout_below="@id/bottom_line"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/header_text_margin_left"
+    android:layout_marginRight="@dimen/view_text_margin_right"/>
+    <LinearLayout
+        android:id="@+id/city_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/header_text_margin_left"
+        android:layout_marginTop="@dimen/weather_margin_top"
+        android:layout_below="@id/weather_layout">
+    <TextView
+        android:id="@+id/measured_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/city_text_size"
+        android:textStyle="normal"
+        android:text="@string/measured"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="@dimen/header_text_margin_top" />
+    <TextView
+        android:id="@+id/city_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/city_text_size"
+        android:layout_marginLeft="@dimen/city_margin_left"
+        android:textStyle="normal"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="@dimen/header_text_margin_top" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/empty_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/city_text_size"
+            android:layout_marginLeft="@dimen/city_margin_left"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:text="@string/no_weather_information_available_for_this_zipcode"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/header_text_margin_top" />
+</RelativeLayout>
+</ScrollView>

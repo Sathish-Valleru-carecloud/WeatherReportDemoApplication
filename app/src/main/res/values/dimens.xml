@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="weather_margin_top">15dp</dimen>
+    <dimen name="city_text_size">12sp</dimen>
+    <dimen name="text_padding_bottom">20dp</dimen>
+    <dimen name="view_text_margin_right">14dp</dimen>
+    <dimen name="view_text_margin_left">15dp</dimen>
+    <dimen name="view_text_height">0.5dp</dimen>
+    <dimen name="text_margin_top">5dp</dimen>
+    <dimen name="edit_text_margin_top">100dp</dimen>
+    <dimen name="edit_text_padding">5dp</dimen>
+    <dimen name="header_text_padding">10dp</dimen>
+    <dimen name="header_text_size">20sp</dimen>
+    <dimen name="header_text_margin_top">5dp</dimen>
+    <dimen name="header_text_margin_left">10dp</dimen>
+    <dimen name="condition_text_size">18sp</dimen>
+    <dimen name="weather_info_text_size">15sp</dimen>
+    <dimen name="weadther_desc_width">220dp</dimen>
+    <dimen name="city_margin_left">3dp</dimen>
+    <dimen name="weather_info_padding_top">15dp</dimen>
+    <dimen name="weather_info_padding_bottom">15dp</dimen>
+</resources>
